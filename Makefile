@@ -11,6 +11,8 @@ THEME = \
 	
 TZ = $(wildcard tz/*)
 
+LOCALES = $(wildcard locales/*)
+
 install:
 	install -dm0755 $(DESTDIR)$(PREFIX)/share/grub/cfg
 	install -m0644 ${CFG} $(DESTDIR)$(PREFIX)/share/grub/cfg
